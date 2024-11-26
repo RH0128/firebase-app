@@ -89,16 +89,6 @@
                 from "https://www.gstatic.com/firebasejs/9.1.0/firebase-auth.js"; //会員登録
     
 
-        // Your web app's Firebase configuration　Firebaseの初期化
-        const firebaseConfig = {
-                apiKey: "AIzaSyAndZXA-jSIkpLzOmqJMr4d-336zrNv0Ps",
-                authDomain: "dev28-3b0c8.firebaseapp.com",
-                projectId: "dev28-3b0c8",
-                storageBucket: "dev28-3b0c8.firebasestorage.app",
-                messagingSenderId: "414471717707",
-                appId: "1:414471717707:web:2b9cf3eecebcbb771b1ece"
-            };
-
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app); //RealtimeDBに接続
         const dbRef = ref(db, "chat"); //RealtimeDB内の"chat"を使う
